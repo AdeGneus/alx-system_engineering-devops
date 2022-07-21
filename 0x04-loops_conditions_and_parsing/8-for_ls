@@ -3,7 +3,7 @@
 # In a list format
 # where only the part of the name after the first dash is displayed
 LIST="$(ls)"
-for i in "$LIST"; do
+for i in $LIST; do
     NEWNAME=$(echo "$i" | cut -d'-' -f2)
     echo "$NEWNAME"
 done
